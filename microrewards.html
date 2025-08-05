@@ -1,0 +1,106 @@
+<html>
+
+    <head>
+      <style>
+
+          body {
+            background: linear-gradient(40deg, red, orange, yellow, green, cyan, blue, violet, red);
+            animation: animateRGB 60s  ease infinite;
+            background-size: 600%, 600%;
+          }
+
+          @keyframes animateRGB{
+            0% {background-position: 0% 50%;}
+            50% {background-position:100% 50%;}
+            100% {background-position: 0% 50%;}
+
+          }
+
+
+          input{
+            margin-top: 80px;
+            margin-left: 55px;
+            height: 50px;
+            width: 90px;
+            border: none;
+            border-style: solid;
+            border-radius: 10px;
+            cursor: pointer;
+            background-color: blue;
+            color: white;
+            transition: background-color 0.5ms, color 0.5s, transform 0.5s, opacity 0.5ms;
+
+          }
+
+          input:hover{
+            background-color: cyan;
+            color: red;
+            transform: scale(1.2);
+          }
+
+          input:active{
+            opacity: 0.7;
+          }
+
+          .box1{
+            background-color: pink;
+            border-radius: 10px;
+            height: 200px;
+            width: 200px;
+            display: inline-block;
+            margin-left: 400px;
+            margin-top: 100px;
+            cursor: pointer;
+            transition: transfrom 0.5s;
+            
+          }
+
+          .box1:hover{
+            transform: scale(1.2);
+          }
+
+          .box2{
+            margin-left: 200px;
+          
+          }
+
+          .heading{
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            text-align: center;
+          
+          }
+
+
+          .heading1{
+            background-color: white;
+            border-radius: 10px;
+
+          }
+
+          img{
+            margin-top: 200px;
+            border-radius: 10px;
+            cursor: pointer;
+          }
+
+          p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            font-size: large;
+            margin-top: 200px;
+            margin-bottom: 0px;
+            font-size: 40px;
+          }
+      </style>
+    </head>
+  <body>
+    <div class="heading1"><h1 class="heading">COLOR PICKER !!!</h1></div>
+    
+    <div class="box2"><div class="box1"><input type="color" name="color" id="color" class="color-input"></div></div>
+    <p>This is how you can use color picker in other windows !!!</p>
+    
+    <img src="hacakclub1.png">
+    
+  </body>
+</html>
